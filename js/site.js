@@ -67,18 +67,6 @@ if (ENQUIRE) {
   });
 }
 
-// Rest of original site.js (menu, scroll, reviews scroller etc.) continues below — copy remaining logic
-  </footer>
-`;
-
-if (ENQUIRE) {
-  document.querySelectorAll("[data-enquire]").forEach((link) => {
-    link.href = ENQUIRE;
-    link.removeAttribute("target");
-    link.removeAttribute("rel");
-  });
-}
-
 const btn = document.querySelector(".menu-btn");
 const nav = document.querySelector(".mobile-nav");
 btn.addEventListener("click", () => {
