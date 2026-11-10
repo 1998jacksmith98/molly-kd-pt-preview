@@ -1,0 +1,16 @@
+Font guesses only — no brand type sheet exists.
+
+Logo / wordmark:
+  She has no logo file. The Instagram display name is set in caps as:
+    MOLLY KD • PERSONAL TRAINER
+  This can be rebuilt as type: a confident geometric or neo-grotesk sans in caps
+  (suggestions: Montserrat, Geist, Inter Tight, or similar), with a middle dot.
+
+On-photo graphics in her feed:
+  Headlines in the tip carousel look like a slightly rounded, friendly bold sans
+  (close to Instagram's default story type / something in the Nunito / Poppins / SF Pro Rounded area).
+  "THE CORE" on training-01 is a high-contrast display serif (Didot / Playfair / Cormorant-ish).
+  Body overlays are a regular sans, often white or black.
+
+Body copy on a site:
+  A clean sans (Inter, Source Sans, or the same family as the wordmark) will sit comfortably with the photos.

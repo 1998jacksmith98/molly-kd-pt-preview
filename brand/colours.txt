@@ -1,0 +1,20 @@
+Molly KD brand colours — sampled from her Instagram graphic style and photos.
+These are guesses from the public feed (she has no logo). Confirm with Molly if she has a palette.
+
+From her recurring tip/story graphics (blush pink labels + near-black type on photos):
+  Blush pink    #F3C9D4    rgb(243,201,212)    — solid text boxes ("Move in every way possible", "Train with friends")
+  Blush highlight #F7D6DC  rgb(247,214,220)
+  Near-black    #1C1C1C    rgb(28,28,28)      — overlay type
+  White         #FFFFFF
+
+From gym photography (hero / training):
+  Charcoal      #111111    rgb(17,17,17)      — dark gym walls and site background option
+  Soft off-white #F6F4F2   rgb(246,244,242)
+
+From clothing that recurs on her feed (optional accent, not a graphic colour):
+  Olive         #5C5A4E    rgb(92,90,78)      — shorts / everyday gymwear
+  Lilac         #C5A8D0    rgb(197,168,208)   — sports bra in lifestyle-05
+
+Do NOT use Body Project red (#D93B3A) or the Places Leisure teal as "her" brand unless she asks — those belong to the gyms, not to MOLLY KD.
+
+Suggested site direction: charcoal + blush pink + white, clean and strong rather than loud. Her own graphics are soft pink labels on photography, not a neon fitness look.
