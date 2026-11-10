@@ -1,0 +1,208 @@
+@media (max-width: 819px) {
+  .hero {
+    height: 680px;
+    min-height: 680px;
+    max-height: 680px;
+    align-items: center;
+    color: var(--ink);
+    background: #f3ede7;
+  }
+  .hero-split {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+  .hero-photo {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    width: 62%;
+    height: 135%;
+    margin: 0;
+  }
+  .hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 32% 100%;
+  }
+  .hero::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1;
+    background: linear-gradient(90deg, #f3ede7 0%, #f3ede7 40%, rgba(243, 237, 231, 0.9) 46%, rgba(243, 237, 231, 0.4) 54%, rgba(243, 237, 231, 0) 62%) !important;
+  }
+  .hero-copy {
+    position: relative;
+    z-index: 2;
+    width: 46%;
+    max-width: 190px;
+    margin: 0;
+    margin-right: auto;
+    padding: 16px 4px 16px 14px;
+  }
+  .hero .kicker,
+  .hero h1,
+  .hero p {
+    color: var(--ink);
+  }
+  .hero .kicker { margin-bottom: 16px; }
+  .hero h1 { font-size: clamp(32px, 9vw, 44px); margin-bottom: 14px; }
+  .hero p { font-size: 12.5px; line-height: 1.4; margin-top: 0; margin-bottom: 6px; }
+  .hero .hero-tag {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-top: 8px;
+  }
+  .hero .btn-row {
+    gap: 8px;
+    margin-top: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero .btn.ghost {
+    color: var(--ink);
+    border-color: var(--ink);
+    background: rgba(243, 237, 231, 0.7);
+    padding: 10px 10px;
+    width: 152px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  #about.section {
+    position: relative;
+    height: 680px;
+    min-height: 680px;
+    max-height: 680px;
+    padding: 0 !important;
+    overflow: hidden;
+    background: #f3ede7;
+  }
+  #about .wrap {
+    position: static !important;
+    width: 46% !important;
+    max-width: 190px;
+    height: 680px;
+    margin: 0 0 0 auto !important;
+    padding: 20px 14px 16px 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  #about .about-grid { display: block; }
+  #about .about-grid > div {
+    position: relative;
+    z-index: 2;
+    text-align: right;
+  }
+  #about .about-grid > div p {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+  }
+
+  #about .about-more { display: none; }
+  #about .about-photo {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: auto !important;
+    bottom: 0 !important;
+    width: 62% !important;
+    height: 680px !important;
+    margin: 0 !important;
+    z-index: 0;
+  }
+  #about .about-photo img {
+    width: 100% !important;
+    height: 680px !important;
+    object-fit: cover;
+    object-position: 58% 22%;
+    transform: none !important;
+  }
+  #about::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1;
+    background: linear-gradient(270deg, #f3ede7 0%, #f3ede7 40%, rgba(243, 237, 231, 0.9) 46%, rgba(243, 237, 231, 0.4) 54%, rgba(243, 237, 231, 0) 62%) !important;
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 820px) {
+  .hero {
+    min-height: 0;
+    height: auto;
+    align-items: stretch;
+    color: var(--ink);
+    background: var(--bg);
+    padding: 64px 0;
+  }
+  .hero::after { display: none; }
+  .hero-split {
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .hero-photo {
+    margin: 0;
+    overflow: hidden;
+    background: #ddd;
+    border-radius: 32px;
+    outline: 1.5px solid var(--taupe);
+    outline-offset: 7px;
+  }
+  .hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 520px;
+    object-position: center 30%;
+    border-radius: 32px;
+  }
+  .hero-copy { padding: 0; }
+  .hero .kicker { color: var(--taupe); }
+  .hero h1 { color: var(--ink); font-size: clamp(52px, 5.5vw, 76px); }
+  .hero p { color: #5c564f; font-size: 16px; max-width: none; }
+  .hero .hero-tag {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 1.15;
+    color: var(--ink);
+    margin-top: 8px;
+  }
+  .hero .btn.ghost {
+    color: var(--ink);
+    border-color: var(--ink);
+    background: transparent;
+  }
+  #about .about-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  #about .about-photo {
+    order: -1;
+    border-radius: 32px;
+    outline: 1.5px solid var(--taupe);
+    outline-offset: 7px;
+  }
+  #about .about-photo img {
+    border-radius: 32px;
+  }
+  #work .photo-frame {
+    border-radius: 32px;
+    outline: 1.5px solid var(--taupe);
+    outline-offset: 7px;
+  }
+  #work .photo-frame img {
+    border-radius: 32px;
+  }
+}
