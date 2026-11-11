@@ -57,7 +57,7 @@
     margin: 0 0 0 auto;
     padding: 28px 16px 32px 20px;
     box-sizing: border-box;
-    background: linear-gradient(270deg, #f3ede7 0%, #f3ede7 calc(100% - 16px), rgba(243, 237, 231, 0) 100%);
+    background: linear-gradient(270deg, #f3ede7 0%, #f3ede7 calc(100% - 40px), rgba(243, 237, 231, 0.6) calc(100% - 10px), rgba(243, 237, 231, 0) 100%);
   }
   .hero-copy::before {
     content: "";
@@ -65,8 +65,8 @@
     top: 0;
     bottom: 0;
     right: 100%;
-    width: 52px;
-    background: linear-gradient(270deg, #f3ede7 0%, rgba(243, 237, 231, 0) 100%);
+    width: 120px;
+    background: linear-gradient(270deg, #f3ede7 0%, rgba(243, 237, 231, 0.85) 25%, rgba(243, 237, 231, 0.4) 55%, rgba(243, 237, 231, 0) 100%);
     pointer-events: none;
   }
   .hero .kicker,
