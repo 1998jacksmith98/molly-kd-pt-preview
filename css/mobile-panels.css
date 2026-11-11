@@ -51,7 +51,7 @@
     justify-content: center;
     text-align: right;
     color: var(--ink);
-    width: min(300px, 66%);
+    width: min(240px, 52%);
     max-width: none;
     min-height: calc(100svh - 61px);
     margin: 0 0 0 auto;
@@ -65,7 +65,7 @@
     top: 0;
     bottom: 0;
     right: 100%;
-    width: 120px;
+    width: 80px;
     background: linear-gradient(270deg, #f3ede7 0%, #f3ede7 15%, rgba(243, 237, 231, 0.7) 40%, rgba(243, 237, 231, 0.2) 70%, rgba(243, 237, 231, 0) 100%);
     pointer-events: none;
   }
