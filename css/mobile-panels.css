@@ -65,8 +65,8 @@
     top: 0;
     bottom: 0;
     right: 100%;
-    width: 80px;
-    background: linear-gradient(270deg, #f3ede7 0%, #f3ede7 15%, rgba(243, 237, 231, 0.7) 40%, rgba(243, 237, 231, 0.2) 70%, rgba(243, 237, 231, 0) 100%);
+    width: 100px;
+    background: linear-gradient(270deg, #f3ede7 0%, rgba(243, 237, 231, 0.95) 8%, rgba(243, 237, 231, 0.6) 30%, rgba(243, 237, 231, 0.25) 60%, rgba(243, 237, 231, 0) 100%);
     pointer-events: none;
   }
   .hero .kicker,
