@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 32% 100%;
+    object-position: 58% 22%;
   }
   .hero::after {
     content: "" !important;
@@ -164,7 +164,7 @@
     height: 100%;
     object-fit: cover;
     min-height: 520px;
-    object-position: center 30%;
+    object-position: 58% 22%;
     border-radius: 32px;
   }
   .hero-copy { padding: 0; }
