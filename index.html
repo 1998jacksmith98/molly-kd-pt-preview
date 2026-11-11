@@ -200,6 +200,8 @@
   <label>Hero Y <input type="range" id="hero-y" min="0" max="100" value="22" style="width:80px"></label>
   <label>About X <input type="range" id="about-x" min="0" max="100" value="50" style="width:80px"></label>
   <label>About Y <input type="range" id="about-y" min="0" max="100" value="30" style="width:80px"></label>
+  <label>Hero scale <input type="range" id="hero-s" min="50" max="150" value="100" style="width:80px"></label>
+  <label>About scale <input type="range" id="about-s" min="50" max="150" value="100" style="width:80px"></label>
   <button id="copy-vals" style="background:#c9a227;border:0;padding:4px 10px;border-radius:4px;cursor:pointer">Copy values</button>
 </div>
 <script>
@@ -210,13 +212,23 @@
   const hy = document.getElementById("hero-y");
   const ax = document.getElementById("about-x");
   const ay = document.getElementById("about-y");
+  const hs = document.getElementById("hero-s");
+  const as_ = document.getElementById("about-s");
   function apply(){
-    if(hero) hero.style.objectPosition = hx.value + "% " + hy.value + "%";
-    if(about) about.style.objectPosition = ax.value + "% " + ay.value + "%";
+    if(hero){
+      hero.style.objectPosition = hx.value + "% " + hy.value + "%";
+      hero.style.transform = "scale(" + (hs.value/100) + ")";
+      hero.style.transformOrigin = "center center";
+    }
+    if(about){
+      about.style.objectPosition = ax.value + "% " + ay.value + "%";
+      about.style.transform = "scale(" + (as_.value/100) + ")";
+      about.style.transformOrigin = "center center";
+    }
   }
-  [hx,hy,ax,ay].forEach(el => el.addEventListener("input", apply));
+  [hx,hy,ax,ay,hs,as_].forEach(el => el.addEventListener("input", apply));
   document.getElementById("copy-vals").onclick = function(){
-    const txt = "HERO: object-position: " + hx.value + "% " + hy.value + "%;\nABOUT: object-position: " + ax.value + "% " + ay.value + "%;";
+    const txt = "HERO: object-position: " + hx.value + "% " + hy.value + "%; transform: scale(" + (hs.value/100) + ");\nABOUT: object-position: " + ax.value + "% " + ay.value + "%; transform: scale(" + (as_.value/100) + ");";
     navigator.clipboard.writeText(txt).then(() => alert("Copied:\n" + txt));
   };
   apply();
