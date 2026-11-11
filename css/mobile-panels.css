@@ -1,39 +1,39 @@
 @media (max-width: 819px) {
   .hero {
-    height: 680px;
-    min-height: 680px;
-    max-height: 680px;
-    align-items: center;
-    color: var(--ink);
-    background: #f3ede7;
+    position: relative;
+    height: 100vh;
+    min-height: 560px;
+    max-height: 800px;
+    align-items: flex-end;
+    color: #fff;
+    background: #1a1a1a;
+    overflow: hidden;
   }
   .hero-split {
     position: static;
     width: 100%;
     margin: 0;
+    height: 100%;
   }
   .hero-photo {
     position: absolute;
-    top: auto;
-    bottom: 0;
-    right: 0;
-    left: auto;
-    width: 62%;
-    height: 135%;
+    inset: 0;
+    width: 100%;
+    height: 100%;
     margin: 0;
   }
   .hero-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 58% 22%;
+    object-position: center center;
   }
   .hero::after {
     content: "" !important;
     position: absolute !important;
     inset: 0 !important;
     z-index: 1;
-    background: linear-gradient(90deg, #f3ede7 0%, #f3ede7 40%, rgba(243, 237, 231, 0.9) 46%, rgba(243, 237, 231, 0.4) 54%, rgba(243, 237, 231, 0) 62%) !important;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.1) 70%, transparent 100%) !important;
   }
   .hero-copy {
     position: relative;

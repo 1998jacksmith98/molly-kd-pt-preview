@@ -21,7 +21,7 @@
   <section class="hero">
     <div class="wrap hero-split">
       <figure class="hero-photo">
-        <img id="hero-img" src="photos/about-me-02.jpg" alt="Molly KD" data-crop="hero" />
+        <img src="photos/about-me-02.jpg" alt="Molly KD" />
       </figure>
       <div class="hero-copy">
         <p class="kicker hero-in d1">Dartford</p>
@@ -70,7 +70,7 @@
         <p class="reveal">Online coaching is available if in-person doesn’t work. Message me and we’ll figure it out.</p>
       </div>
       <figure class="about-photo reveal">
-        <img id="about-img" src="photos/action-01.jpg" alt="Molly KD" data-crop="about" />
+        <img src="photos/action-01.jpg" alt="Molly KD" />
       </figure>
     </div>
   </section>
@@ -194,46 +194,7 @@
   <div id="site-footer"></div>
   <script src="js/site.js?v=2"></script>
 
-<div id="crop-controls" style="position:fixed;bottom:0;left:0;right:0;background:#1a2332;color:#fff;padding:12px;font-size:13px;z-index:9999;display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
-  <span style="font-weight:600">Crop controls</span>
-  <label>Hero X <input type="range" id="hero-x" min="0" max="100" value="58" style="width:80px"></label>
-  <label>Hero Y <input type="range" id="hero-y" min="0" max="100" value="22" style="width:80px"></label>
-  <label>About X <input type="range" id="about-x" min="0" max="100" value="50" style="width:80px"></label>
-  <label>About Y <input type="range" id="about-y" min="0" max="100" value="30" style="width:80px"></label>
-  <label>Hero scale <input type="range" id="hero-s" min="50" max="150" value="100" style="width:80px"></label>
-  <label>About scale <input type="range" id="about-s" min="50" max="150" value="100" style="width:80px"></label>
-  <button id="copy-vals" style="background:#c9a227;border:0;padding:4px 10px;border-radius:4px;cursor:pointer">Copy values</button>
-</div>
-<script>
-(function(){
-  const hero = document.querySelector("[data-crop=hero]");
-  const about = document.querySelector("[data-crop=about]");
-  const hx = document.getElementById("hero-x");
-  const hy = document.getElementById("hero-y");
-  const ax = document.getElementById("about-x");
-  const ay = document.getElementById("about-y");
-  const hs = document.getElementById("hero-s");
-  const as_ = document.getElementById("about-s");
-  function apply(){
-    if(hero){
-      hero.style.objectPosition = hx.value + "% " + hy.value + "%";
-      hero.style.transform = "scale(" + (hs.value/100) + ")";
-      hero.style.transformOrigin = "center center";
-    }
-    if(about){
-      about.style.objectPosition = ax.value + "% " + ay.value + "%";
-      about.style.transform = "scale(" + (as_.value/100) + ")";
-      about.style.transformOrigin = "center center";
-    }
-  }
-  [hx,hy,ax,ay,hs,as_].forEach(el => el.addEventListener("input", apply));
-  document.getElementById("copy-vals").onclick = function(){
-    const txt = "HERO: object-position: " + hx.value + "% " + hy.value + "%; transform: scale(" + (hs.value/100) + ");\nABOUT: object-position: " + ax.value + "% " + ay.value + "%; transform: scale(" + (as_.value/100) + ");";
-    navigator.clipboard.writeText(txt).then(() => alert("Copied:\n" + txt));
-  };
-  apply();
-})();
-</script>
+
 
 </body>
 </html>
