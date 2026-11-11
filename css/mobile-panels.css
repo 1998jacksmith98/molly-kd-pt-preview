@@ -38,6 +38,9 @@
   .hero-copy {
     position: relative;
     z-index: 2;
+    align-self: center;
+    text-align: center;
+    color: #fff;
     width: 46%;
     max-width: 190px;
     margin: 0;
@@ -47,7 +50,7 @@
   .hero .kicker,
   .hero h1,
   .hero p {
-    color: var(--ink);
+    color: #fff;
   }
   .hero .kicker { margin-bottom: 16px; }
   .hero h1 { font-size: clamp(32px, 9vw, 44px); margin-bottom: 14px; }
